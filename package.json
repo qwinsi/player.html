@@ -1,0 +1,10 @@
+{
+  "name": "player-html",
+  "scripts": {
+    "predeploy": "mkdir -p dist && cp src/player.html dist/index.html",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  }
+}
