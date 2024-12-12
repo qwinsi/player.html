@@ -3396,7 +3396,7 @@
     const actionOpenLocalFile = () => {
       const reader = new FileReader();
       const supportedTypes = app.options.supportedTypes.mime.join(',');
-      const $input = $(`<input type="file" accept="${supportedTypes}"/>`);
+      const $input = $(`<input type="file" accept="${supportedTypes},.mkv"/>`);
       $input.on('change', () => playFile($input.files[0]));
       $input.click();
     }
